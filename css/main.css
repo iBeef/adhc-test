@@ -1,0 +1,130 @@
+:root {
+  --bs-rr-brand: rgb(16, 6, 159);
+  --bs-primary: rgb(0, 103, 239);
+  --bs-primary-hover: rgb(0, 71, 192);
+  --bs-secondary-hover: rgb(0, 71, 192);
+  --bs-danger: rgb(218, 30, 40);
+  --bs-danger-hover: rgb(169, 0, 9);
+  --bs-faint-hover: rgb(247, 247, 247);
+  --bs-primary-rgb: rgb(0, 103, 239);
+  --bs-modal-bg-color: rgba(0, 0, 0, 0.4);
+  --bs-accordion-border-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary-hover);
+  --bs-btn-border-color: var(--bs-primary);
+}
+
+.btn-secondary {
+  --bs-btn-bg: white;
+  --bs-btn-hover-bg: var(--bs-secondary-hover);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-color: var(--bs-primary);
+}
+
+.btn-danger {
+  --bs-btn-bg: var(--bs-danger);
+  --bs-btn-hover-bg: var(--bs-danger-hover);
+}
+
+.btn-faint {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-faint-hover);
+  --bs-btn-hover-color: var(--bs-primary-hover);
+}
+
+.btn-faint-alt {
+  --bs-btn-bg-color: var(--bs-light-rgb);
+  --bs-btn-hover-bg: white;
+}
+
+.btn-faint-alt:hover {
+  border-color: rgba(0, 71, 192, 0.2);
+}
+
+.btn-faint:active:not([disabled]) {
+  border-color: var(--bs-primary-hover);
+}
+
+.btn {
+  font-weight: 500;
+}
+
+.modal-backdrop {
+  background-color: var(--bs-modal-bg-color);
+}
+
+.modal-content {
+  box-shadow: 0px 1px 0px rgba(38, 38, 38, 0.3),
+    0px 8px 12px 0px rgba(38, 38, 38, 0.14);
+}
+
+header {
+  background: var(--bs-rr-brand);
+}
+
+nav.bg-body-tertiary {
+  background-color: unset !important;
+}
+
+.highlight {
+  transition: all 0.35s ease-in-out;
+}
+
+.highlight-on {
+  background: rgba(14, 14, 233, 0.45) !important;
+  color: #ffffff !important;
+}
+
+.bg-rr-blue {
+  background-color: var(--bs-rr-brand);
+}
+
+span.input-group-text {
+  min-width: 112px;
+}
+
+.bi {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentcolor;
+}
+
+.accordion {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: var(--bs-accordion-border-color);
+}
+
+.accordion h6 {
+  font-size: 18px;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%230067ef' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  /* color: white; */
+  color: inherit;
+  background-color: unset;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%230067ef' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body hr {
+  border-color: var(--bs-primary);
+}
